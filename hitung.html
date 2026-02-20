@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Imsyakiah - Musholla Bayanul Muttaqin</title>
+    <meta name="description"
+        content="Jadwal Imsyakiah Shalat Wajib dan Puasa Ramadhan 2025 untuk Rempek Darussalam dan sekitarnya.">
+    <link rel="icon" href="Musholla.png" type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Amiri:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+    <audio id="background-audio" loop>
+        <source src="audio.mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung elemen audio.
+    </audio>
+
+    <header class="text-white text-center animated-header py-5">
+        <div class="container" data-aos="fade-down" data-aos-duration="1000">
+            <img src="Musholla.png" alt="Logo Musholla"
+                class="animated-logo mb-4 rounded-circle border border-warning p-2"
+                style="height: 120px; width: 120px; object-fit: contain;">
+            <h1 class="display-3 fw-bold mb-3 text-warning">Jadwal Imsyakiah</h1>
+            <p class="lead text-info">Ramadhan - Musholla Bayanul Muttaqin Rempek Darussalam</p>
+            <p class="lead arabic-text" style="font-family: 'Amiri', serif;">مرحبا بكم في بَيَانُ الْمُتَّقِينَ
+            </p>
+            <p class="quran-verse mt-4 p-3 rounded shadow-sm bg-dark bg-opacity-75" data-aos="zoom-in">
+                يٰٓاَيُّهَا الَّذِيْنَ اٰمَنُوْا كُتِبَ عَلَيْكُمُ الصِّيَامُ كَمَا كُتِبَ عَلَى
+                الَّذِيْنَ مِنْ قَبْلِكُمْ لَعَلَّكُمْ تَتَّقُوْنَۙ
+                <br><small class="text-white-50">(Q.S. Al-Baqarah: 183)</small>
+            </p>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-mosque me-2 text-warning"></i>بَيَانُ الْمُتَّقِينَ
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home me-1"></i>
+                            Beranda</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="jadwal.html"><i class="fas fa-calendar-alt me-1"></i>
+                            Jadwal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="amalan.html"><i
+                                class="fas fa-hands-praying me-1"></i>
+                            Do'a</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="hitung.html"><i
+                                class="fas fa-calculator me-1"></i>
+                            Imsyakiah</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5 text-center">
+        <p class="text-muted mb-4" data-aos="fade-up"><small><i class="fas fa-clock me-1 text-info"></i> Sumber data
+                perkiraan: Kementerian Agama Republik Indonesia</small></p>
+
+        <div class="table-container shadow" data-aos="fade-up" data-aos-delay="200">
+            <table class="imsyakiah-table">
+                <thead>
+                    <tr>
+                        <th>TANGGAL</th>
+                        <th>IMSAK</th>
+                        <th>SUBUH</th>
+                        <th>DZUHUR</th>
+                        <th>ASHAR</th>
+                        <th>MAGHRIB</th>
+                        <th>ISYA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sabtu, 01 Maret 2025</td>
+                        <td class="imsyak-time">04:54</td>
+                        <td>05:04</td>
+                        <td>12:31</td>
+                        <td>15:34</td>
+                        <td class="maghrib-time">18:39</td>
+                        <td>19:48</td>
+                    </tr>
+                    <tr>
+                        <td>Minggu, 02 Maret 2025</td>
+                        <td class="imsyak-time">04:54</td>
+                        <td>05:04</td>
+                        <td>12:31</td>
+                        <td>15:34</td>
+                        <td class="maghrib-time">18:38</td>
+                        <td>19:48</td>
+                    </tr>
+                    <tr>
+                        <td>Senin, 03 Maret 2025</td>
+                        <td class="imsyak-time">04:54</td>
+                        <td>05:04</td>
+                        <td>12:31</td>
+                        <td>15:34</td>
+                        <td class="maghrib-time">18:38</td>
+                        <td>19:47</td>
+                    </tr>
+                    <tr>
+                        <td>Selasa, 04 Maret 2025</td>
+                        <td class="imsyak-time">04:54</td>
+                        <td>05:04</td>
+                        <td>12:31</td>
+                        <td>15:35</td>
+                        <td class="maghrib-time">18:37</td>
+                        <td>19:47</td>
+                    </tr>
+                    <tr>
+                        <td>Rabu, 05 Maret 2025</td>
+                        <td class="imsyak-time">04:54</td>
+                        <td>05:04</td>
+                        <td>12:30</td>
+                        <td>15:35</td>
+                        <td class="maghrib-time">18:37</td>
+                        <td>19:46</td>
+                    </tr>
+                    <tr>
+                        <td>Kamis, 06 Maret 2025</td>
+                        <td class="imsyak-time">04:54</td>
+                        <td>05:04</td>
+                        <td>12:30</td>
+                        <td>15:35</td>
+                        <td class="maghrib-time">18:36</td>
+                        <td>19:46</td>
+                    </tr>
+                    <tr>
+                        <td>Jumat, 07 Maret 2025</td>
+                        <td class="imsyak-time">04:54</td>
+                        <td>05:04</td>
+                        <td>12:30</td>
+                        <td>15:36</td>
+                        <td class="maghrib-time">18:36</td>
+                        <td>19:45</td>
+                    </tr>
+                    <tr>
+                        <td>Sabtu, 08 Maret 2025</td>
+                        <td class="imsyak-time">04:54</td>
+                        <td>05:04</td>
+                        <td>12:30</td>
+                        <td>15:36</td>
+                        <td class="maghrib-time">18:35</td>
+                        <td>19:45</td>
+                    </tr>
+                    <tr>
+                        <td>Minggu, 09 Maret 2025</td>
+                        <td class="imsyak-time">04:54</td>
+                        <td>05:04</td>
+                        <td>12:29</td>
+                        <td>15:36</td>
+                        <td class="maghrib-time">18:35</td>
+                        <td>19:44</td>
+                    </tr>
+                    <tr>
+                        <td>Senin, 10 Maret 2025</td>
+                        <td class="imsyak-time">04:54</td>
+                        <td>05:04</td>
+                        <td>12:29</td>
+                        <td>15:37</td>
+                        <td class="maghrib-time">18:34</td>
+                        <td>19:43</td>
+                    </tr>
+                    <tr>
+                        <td>Selasa, 11 Maret 2025</td>
+                        <td class="imsyak-time">04:55</td>
+                        <td>05:05</td>
+                        <td>12:29</td>
+                        <td>15:37</td>
+                        <td class="maghrib-time">18:34</td>
+                        <td>19:43</td>
+                    </tr>
+                    <tr>
+                        <td>Rabu, 12 Maret 2025</td>
+                        <td class="imsyak-time">04:55</td>
+                        <td>05:05</td>
+                        <td>12:29</td>
+                        <td>15:37</td>
+                        <td class="maghrib-time">18:33</td>
+                        <td>19:42</td>
+                    </tr>
+                    <tr>
+                        <td>Kamis, 13 Maret 2025</td>
+                        <td class="imsyak-time">04:55</td>
+                        <td>05:05</td>
+                        <td>12:28</td>
+                        <td>15:37</td>
+                        <td class="maghrib-time">18:33</td>
+                        <td>19:42</td>
+                    </tr>
+                    <tr>
+                        <td>Jumat, 14 Maret 2025</td>
+                        <td class="imsyak-time">04:55</td>
+                        <td>05:05</td>
+                        <td>12:28</td>
+                        <td>15:38</td>
+                        <td class="maghrib-time">18:32</td>
+                        <td>19:41</td>
+                    </tr>
+                    <tr>
+                        <td>Sabtu, 15 Maret 2025</td>
+                        <td class="imsyak-time">04:55</td>
+                        <td>05:05</td>
+                        <td>12:28</td>
+                        <td>15:38</td>
+                        <td class="maghrib-time">18:32</td>
+                        <td>19:41</td>
+                    </tr>
+                    <tr>
+                        <td>Minggu, 16 Maret 2025</td>
+                        <td class="imsyak-time">04:55</td>
+                        <td>05:05</td>
+                        <td>12:28</td>
+                        <td>15:38</td>
+                        <td class="maghrib-time">18:31</td>
+                        <td>19:40</td>
+                    </tr>
+                    <tr>
+                        <td>Senin, 17 Maret 2025</td>
+                        <td class="imsyak-time">04:55</td>
+                        <td>05:05</td>
+                        <td>12:27</td>
+                        <td>15:38</td>
+                        <td class="maghrib-time">18:31</td>
+                        <td>19:40</td>
+                    </tr>
+                    <tr>
+                        <td>Selasa, 18 Maret 2025</td>
+                        <td class="imsyak-time">04:55</td>
+                        <td>05:05</td>
+                        <td>12:27</td>
+                        <td>15:38</td>
+                        <td class="maghrib-time">18:30</td>
+                        <td>19:39</td>
+                    </tr>
+                    <tr>
+                        <td>Rabu, 19 Maret 2025</td>
+                        <td class="imsyak-time">04:55</td>
+                        <td>05:05</td>
+                        <td>12:27</td>
+                        <td>15:38</td>
+                        <td class="maghrib-time">18:30</td>
+                        <td>19:39</td>
+                    </tr>
+                    <tr>
+                        <td>Kamis, 20 Maret 2025</td>
+                        <td class="imsyak-time">04:55</td>
+                        <td>05:05</td>
+                        <td>12:27</td>
+                        <td>15:38</td>
+                        <td class="maghrib-time">18:29</td>
+                        <td>19:38</td>
+                    </tr>
+                    <tr>
+                        <td>Jumat, 21 Maret 2025</td>
+                        <td class="imsyak-time">04:55</td>
+                        <td>05:05</td>
+                        <td>12:26</td>
+                        <td>15:38</td>
+                        <td class="maghrib-time">18:29</td>
+                        <td>19:38</td>
+                    </tr>
+                    <tr>
+                        <td>Sabtu, 22 Maret 2025</td>
+                        <td class="imsyak-time">04:55</td>
+                        <td>05:05</td>
+                        <td>12:26</td>
+                        <td>15:38</td>
+                        <td class="maghrib-time">18:28</td>
+                        <td>19:37</td>
+                    </tr>
+                    <tr>
+                        <td>Minggu, 23 Maret 2025</td>
+                        <td class="imsyak-time">04:55</td>
+                        <td>05:05</td>
+                        <td>12:26</td>
+                        <td>15:38</td>
+                        <td class="maghrib-time">18:28</td>
+                        <td>19:37</td>
+                    </tr>
+                    <tr>
+                        <td>Senin, 24 Maret 2025</td>
+                        <td class="imsyak-time">04:55</td>
+                        <td>05:05</td>
+                        <td>12:26</td>
+                        <td>15:38</td>
+                        <td class="maghrib-time">18:27</td>
+                        <td>19:36</td>
+                    </tr>
+                    <tr>
+                        <td>Selasa, 25 Maret 2025</td>
+                        <td class="imsyak-time">04:55</td>
+                        <td>05:05</td>
+                        <td>12:25</td>
+                        <td>15:38</td>
+                        <td class="maghrib-time">18:27</td>
+                        <td>19:36</td>
+                    </tr>
+                    <tr>
+                        <td>Rabu, 26 Maret 2025</td>
+                        <td class="imsyak-time">04:55</td>
+                        <td>05:05</td>
+                        <td>12:25</td>
+                        <td>15:38</td>
+                        <td class="maghrib-time">18:26</td>
+                        <td>19:35</td>
+                    </tr>
+                    <tr>
+                        <td>Kamis, 27 Maret 2025</td>
+                        <td class="imsyak-time">04:55</td>
+                        <td>05:05</td>
+                        <td>12:25</td>
+                        <td>15:38</td>
+                        <td class="maghrib-time">18:26</td>
+                        <td>19:35</td>
+                    </tr>
+                    <tr>
+                        <td>Jumat, 28 Maret 2025</td>
+                        <td class="imsyak-time">04:54</td>
+                        <td>05:04</td>
+                        <td>12:24</td>
+                        <td>15:39</td>
+                        <td class="maghrib-time">18:25</td>
+                        <td>19:34</td>
+                    </tr>
+                    <tr>
+                        <td>Sabtu, 29 Maret 2025</td>
+                        <td class="imsyak-time">04:54</td>
+                        <td>05:04</td>
+                        <td>12:24</td>
+                        <td>15:39</td>
+                        <td class="maghrib-time">18:25</td>
+                        <td>19:34</td>
+                    </tr>
+                    <tr>
+                        <td>Sabtu, 30 Maret 2025</td>
+                        <td class="imsyak-time">04:54</td>
+                        <td>05:04</td>
+                        <td>12:23</td>
+                        <td>15:39</td>
+                        <td class="maghrib-time">18:24</td>
+                        <td>19:33</td>
+                    </tr>
+                    <tr>
+                        <td>Minggu, 31 Maret 2025</td>
+                        <td class="imsyak-time">04:54</td>
+                        <td>05:04</td>
+                        <td>12:23</td>
+                        <td>15:39</td>
+                        <td class="maghrib-time">18:23</td>
+                        <td>19:32</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="mt-4 text-muted fst-italic" data-aos="fade-up" data-aos-delay="300"><i
+                class="fas fa-exclamation-triangle me-1 text-warning"></i> Perkiraan waktu Imsyakiah ini bersifat lokal.
+            Selalu konfirmasi dengan sumber resmi setempat.</p>
+
+    </main>
+
+    <footer class="py-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5 class="text-warning">Tentang Kami</h5>
+                    <p>Musholla Bayanul Muttaqin - Pusat kegiatan keagamaan</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-warning">Jam Operasional</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-calendar-day me-2 text-info"></i>Senin-Minggu</li>
+                        <li><i class="fas fa-clock me-2 text-info"></i>24 Jam</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-warning">Media Sosial</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3 fs-4"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white me-3 fs-4"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center mb-0">© 2025 Musholla Bayanul Muttaqin | Developed by</p>
+            <p class="text-center">© <a href="https://193tb4l3.github.io/Portfolio1/"><strong>Muhammad Nurul Azman</strong></a></p>
+        </div>
+    </footer>
+
+    <div id="audio-control">
+        <i class="fas fa-volume-up"></i>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+            once: true
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const audio = document.getElementById('background-audio');
+            const control = document.getElementById('audio-control');
+            const icon = control.querySelector('i');
+            let isPlaying = true; // Status awal: diasumsikan bermain (ikon volume-up)
+
+            // Coba putar audio. Browser modern sering memblokir autoplay,
+            // jadi kita akan menganggapnya mute jika gagal.
+            audio.play().catch(error => {
+                console.log("Autoplay diblokir:", error);
+                isPlaying = false;
+                icon.className = 'fas fa-volume-mute';
+            });
+
+            control.addEventListener('click', function () {
+                if (isPlaying) {
+                    audio.pause();
+                    icon.className = 'fas fa-volume-mute'; // Ganti ke ikon Mute
+                    isPlaying = false;
+                } else {
+                    audio.play().catch(error => {
+                        console.log("Gagal memutar audio setelah klik:", error);
+                    });
+                    icon.className = 'fas fa-volume-up'; // Ganti ke ikon Volume Up
+                    isPlaying = true;
+                }
+            });
+        });
+    </script>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,343 @@
+html, body {
+    overflow-x: hidden;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    /* Dihapus: text-align: center; agar main content bisa rata kiri */
+    background: linear-gradient(120deg, #2c3e50, #3498db);
+    
+    /* Dihapus: flex-direction: center; dan align-items: center; */
+    color: rgb(251, 246, 246);
+}
+
+/* Penyesuaian agar teks di Main Content terlihat di latar belakang card putih */
+main.container {
+    color: #333333 !important; /* Agar teks di dalam elemen non-tabel di main terlihat */
+}
+
+.animated-header {
+    /* Menggunakan tema header gelap yang konsisten */
+    background: linear-gradient(135deg, #1f2a36, #34495e); 
+    padding: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.animated-logo {
+    animation: bounceIn 1.5s ease-in-out;
+}
+
+/* Navigasi */
+.navbar {
+    background: linear-gradient(135deg, #343a40, #212529);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #f8f9fa !important;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.05); /* Sedikit diperkecil hover scale agar tidak terlalu besar */
+}
+
+.navbar-nav .nav-link {
+    color: #f8f9fa !important;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+    color: #ffc107 !important; /* Aksen Kuning/Emas */
+}
+
+/* Card Styling */
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Animasi */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Footer Styling */
+footer {
+    background: #212529; /* Warna dark Bootstrap */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+footer a {
+    color: #f8f9fa; /* Warna link lebih soft */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: #ffc107; /* Warna hover kuning keemasan */
+}
+
+footer hr {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 50%;
+    margin: 10px auto;
+}
+
+footer p {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+footer strong {
+    font-weight: bold;
+    color: #17a2b8; /* Warna biru cerah Bootstrap */
+}
+
+/* Membungkus tabel agar bisa di-scroll di layar kecil */
+.table-container {
+    overflow-x: auto; /* Supaya tabel bisa di-scroll horizontal jika terlalu besar */
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    padding: 0;
+}
+
+/* Pengaturan dasar tabel (Diganti dengan styling .imsyakiah-table) */
+/* th, td, table { styling dihapus/diabaikan agar tidak menimpa imsyakiah-table } */
+
+
+/* --- Penyesuaian Gaya Tabel Imsyakiah (Fokus pada Teks Putih) --- */
+
+.imsyakiah-table {
+    width: 100%;
+    min-width: 650px; 
+    border-collapse: separate;
+    border-spacing: 0 8px; 
+    background-color: #343a40; /* Latar belakang tabel utama gelap */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); 
+    margin: auto;
+}
+
+.imsyakiah-table thead th {
+    background-color: #17a2b8; /* Biru Info (Kepala Tabel) */
+    color: white; /* Teks Putih */
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 15px 10px;
+    border: none;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.imsyakiah-table tbody tr {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    background-color: #212529; /* Latar belakang baris gelap */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.imsyakiah-table tbody tr:hover {
+    background-color: #495057; /* Hover dark gray */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.imsyakiah-table tbody td {
+    padding: 12px 10px;
+    color: white !important; /* WAJIB: Mengatur warna teks menjadi putih */
+    font-weight: 500;
+    vertical-align: middle;
+    /* Border disesuaikan agar menyatu dengan background gelap */
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+}
+
+/* Highlight Imsyak dan Maghrib */
+.imsyak-time, .maghrib-time {
+    font-weight: 700 !important;
+    color: #212529 !important; /* Teks gelap agar terlihat di latar kuning/emas */
+    background-color: #ffc107; /* Kuning/Emas */
+    border-radius: 4px;
+    padding: 5px 8px;
+    display: inline-block;
+}
+
+/* Penyesuaian untuk integrasi tema */
+.section-title {
+    color: #ffc107;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    position: relative;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: #17a2b8; /* Warna biru info */
+}
+
+.list-icon li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    text-align: left;
+    color: white; /* Memastikan teks list item putih */
+}
+
+.list-icon li i {
+    color: #17a2b8; /* Ikon menggunakan warna info/biru */
+}
+
+
+.galeri-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.galeri-item:hover {
+    transform: scale(1.05);
+}
+
+.galeri-item img {
+    transition: transform 0.3s ease;
+}
+
+.galeri-item:hover img {
+    transform: scale(1.1);
+}
+
+.galeri-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 10px;
+    font-size: 0.9rem;
+}
+
+.info-kontak {
+    background: rgba(255,255,255,0.1); /* Biarkan latar belakang transparan gelap */
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.social-media .btn {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-media .btn:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
+
+/* Penyesuaian Responsif */
+@media (max-width: 768px) {
+    .header-gradient {
+        padding: 60px 0;
+    }
+    
+    .logo-main {
+        height: 80px;
+    }
+    
+    .section-title::after {
+        width: 40px;
+    }
+    
+    .card {
+        margin: 15px 0; /* Ubah margin di layar kecil */
+    }
+    .arabic-text {
+        font-size: 1.4rem;
+    }
+}
+
+/* Penyesuaian Responsif untuk Tabel Imsyakiah */
+@media (max-width: 650px) {
+    .imsyakiah-table {
+        min-width: 100%;
+        font-size: 13px; 
+    }
+    
+    .imsyakiah-table th, .imsyakiah-table td {
+        padding: 8px 4px;
+    }
+}
+
+/* --- Tambahan Styling Audio Control --- */
+#audio-control {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    width: 50px;
+    height: 50px;
+    background-color: #ffc107; /* Warna Aksen Kuning */
+    color: #212529;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#audio-control:hover {
+    background-color: #e0a800;
+    transform: scale(1.05);
+}
+
+#audio-control i {
+    font-size: 24px;
+}
