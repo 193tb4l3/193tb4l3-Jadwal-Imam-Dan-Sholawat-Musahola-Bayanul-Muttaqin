@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const sodaqohList = [
         "Irtip","Umul","Ayu","Pao","Nadia","Farida","Uni","Rida",
         "Lisda","Tina","Mar","Yurni","Marhamah","Rismah","Mery","Aminah",
-        "Sri","Suh","Ema","War","Rayuni","Susi","Kartini","Nila",
+        "Sri safaatun","Suh","Ema","War","Rayuni","Susi","Kartini","Nila",
         "Sarkip","Segianep","Sir","Srinatip","Widiya","Mus","Riani",
         "Satip","Siti","Nurmini","Desi","Roh/Wahadi"
     ];
@@ -188,5 +188,6 @@ document.addEventListener("DOMContentLoaded", function () {
             card.style.display = text.includes(filter) ? "block" : "none";
         });
     });
+
 
 });
